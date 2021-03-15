@@ -2,9 +2,13 @@
 node {
      
     stage('YAMLSnakeParser') {        
-      echo 'Running grrovy code to parse yaml:.'
+     echo 'Running groovy code to parse yaml:.'
        sh 'pwd'
+echo 'Running groovy code hre yaml:.'
  ymlParser = new com.data.YAMLSnakeParser()
+
+
+ echo 'Running groovy parser to parse yaml:.'
         result = ymlParser.parseYmlData("/home/dell/car.yaml")
   println result
          
