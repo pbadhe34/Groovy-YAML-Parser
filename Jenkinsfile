@@ -1,10 +1,10 @@
 @Library('My-Shared-Lib') _  
 node {
      
-    stage('YAMLParser') {        
+    stage('YAMLSnakeParser') {        
       echo 'Running grrovy code to parse yaml:.'
        sh 'pwd'
- ymlParser = new com.data.YAMLParser()
+ ymlParser = new com.data.YAMLSnakeParser()
         result = ymlParser.parseYmlData("/home/dell/car.yaml")
   println result
          
