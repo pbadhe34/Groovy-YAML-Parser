@@ -9,7 +9,7 @@ echo 'Running groovy code hre yaml:.'
 
 
  echo 'Running groovy parser to parse yaml:.'
-        result = ymlParser.parseYmlData("/home/dell/car.yaml")
+        result = ymlParser.parseStructure("/home/dell/car.yaml")
   println result
          
     }
