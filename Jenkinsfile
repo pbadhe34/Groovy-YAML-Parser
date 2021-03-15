@@ -10,7 +10,8 @@ echo 'Running groovy code hre yaml:.'
 
  echo 'Running groovy parser to parse yaml:.'
         result = ymlParser.parseStructure("/home/dell/car.yaml")
-     echo result.records.car.record.model.dealer.name
+     println result
+     println result.records
          
     }
     stage('Build') {
