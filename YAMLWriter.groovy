@@ -23,7 +23,7 @@ builder.records {
 
   println  builder.toString()
   
-  FileWriter fileWriter = new FileWriter("car.yaml")
+  FileWriter fileWriter = new FileWriter("test.yaml")
   
   
   fileWriter.write(builder.toString())

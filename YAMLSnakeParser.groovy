@@ -4,9 +4,11 @@ import org.yaml.snakeyaml.Yaml
 
 class YAMLSnakeParser{
 
+    
+
  String parseYmlData(filename){ 
 Yaml parser = new Yaml()
-data = parser.load((filename as File).text)
+def data = parser.load((filename as File).text)
 
   data.each{println it}
   println data.records.car.name
